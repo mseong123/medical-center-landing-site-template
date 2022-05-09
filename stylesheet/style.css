@@ -1,0 +1,484 @@
+/*Global styles*/
+/*override default bootstrap font-family*/
+body {
+  font-family:'Open Sans', sans-serif;
+  color:#666;
+  font-size:16px;
+}
+a {
+  color:#666;
+}
+a:focus,
+a:hover {
+  color:#3c3c3c;
+}
+
+/*navbar*/
+/*override or extend Bootstrap if necessary*/
+.fixed-bar{
+  background-color:#3fbbc0;
+  text-align:center;
+  color:white;
+  padding-top:8px;
+}
+
+.navbar-brand-custom {
+  height:80px;
+}
+.navbar-brand-custom>img {
+  max-height:100%;
+}
+.navbar-toggle-custom {
+  margin-top:23px;
+  margin-bottom:23px;
+}
+.navbar-nav > li >a {
+  font-weight:700;
+}
+.badge {
+  background-color:red;
+  margin-left:5px;
+}
+
+@media(min-width:768px) {
+  .fixed-bar-info-left {
+    float:left;
+  }
+  .fixed-bar-info-right {
+    float:right;
+  }
+  .navbar-nav {
+    margin-top:15px;
+    margin-bottom:15px;
+  }
+}
+/*--Main sections--*/
+/*section 1 info*/
+.section-1-home {
+  margin-top:120px;
+  padding-top:40px;
+  background-image:url("https://raw.githubusercontent.com/mseong123/assets/master/Bg/elderly-1461424_1920.jpg");
+  background-size:100%;
+  background-attachment: fixed;
+  position:relative;
+  background-repeat:no-repeat;
+}
+.bg-opacity {
+  position:absolute;
+  top:0;
+  left:0;
+  right:0;
+  bottom:0;
+  opacity:0.7;
+  background-color:white;
+  z-index:1;
+}
+.section-1-home .container {
+  position:relative;
+  z-index:2;
+}
+.section-1-home-info h1 {
+  font-weight:800;
+}
+
+.section-1-home-info strong {
+  color:#3fbbc0;
+}
+.section-1-home-info ul {
+  background-color:white;
+  list-style:none;
+  padding:0;
+  margin-bottom:20px;
+}
+.section-1-home-info ul .fa-check {
+  color:#7db53b;
+  vertical-align:middle;
+  padding:0 5px;
+}
+.section-1-home-info ul>li {
+  padding:10px 5px;
+}
+
+.section-1-home-info ul .list {
+  display:inline-block;
+  vertical-align:middle;
+}
+.section-1-home-info ul .list>h4 {
+  font-weight:800;
+}
+
+/*-section 1 form*/
+/*override Bootstrap panel-component style*/
+.panel-custom .panel-heading {
+  background-color:#444;
+  color:white;
+  border:1px solid white;
+}
+.panel-custom .panel-title {
+  font-size:20px;
+  font-weight:700;
+  padding:10px 0;
+}
+.section-1-form {
+  padding:20px 0;
+}
+.btn-custom {
+  background-color:#4ACCD1;
+  color:white;
+  transition:background-color linear 0.3s;
+}
+.btn-custom:hover {
+  background-color:#666;
+  color:white;
+}
+.section-1-form-footer {
+  margin-top:20px;
+}
+/*section-1-infobox*/
+.section-1-infobox {
+  text-align:center;
+  margin:20px 0;
+}
+.circled {
+  background-color:#4ACCD1;
+  border-radius:50%;
+  width:1.6em;
+  height:1.6em;
+  color:white;
+  line-height:1.6em;
+}
+.section-1-infobox h4 {
+  font-size:20px;
+  font-weight:700;
+  padding:10px 0;
+  color:#444;
+}
+.section-1-infobox p {
+  padding:10px 0;
+  color:#444;
+} 
+/*section-1 appointment*/
+.section-1-appointment {
+  margin:40px 0;
+  text-align:center;
+}
+.section-1-appointment h4 {
+  font-size:22px;
+  font-weight:700;
+  color:#444;
+}
+.section-1-appointment p {
+  color:#444;
+}
+/*section-2 service*/
+.section-2-service {
+  margin:40px 0;
+}
+.section-2-service-readlist {
+  list-style:none;
+  padding:0;
+  margin-bottom:20px;
+}
+.section-2-service-readlist .icon {
+  color:#4ACCD1;
+  vertical-align:middle;
+  padding:0 5px;
+}
+.section-2-service-readlist>li {
+  padding:10px 5px;
+}
+.section-2-service-readlist .list {
+  display:inline-block;
+  vertical-align:middle;
+}
+.section-2-service-readlist .list h4 {
+  font-size:24px;
+  font-weight:500;
+  color:#444;
+}
+/*section-3-doctors*/
+.section-3-doctor {
+  text-align:center;
+}
+.section-3-doctor-title {
+  font-weight:600;
+}
+/*use nav-pills style and override some styles with nav-custom*/
+.nav-custom {
+  margin-top:50px;
+}
+.nav-custom>li.active>a,
+.nav-custom>li.active>a:hover,
+.nav-custom>li.active>a:focus{
+  background-color:#4ACCD1;
+}
+.tab-content-custom {
+  padding:30px 0;
+}
+/*need specificity to override default bootstrap styles for thumbnail*/
+a.thumbnail-custom:hover,
+a.thumbnail-custom:focus,
+a.thumbnail-custom:active{
+  border-color:#4ACCD1 ;
+  text-decoration:none;
+}
+.thumbnail-custom h4 {
+  font-weight:700;
+  color:#4ACCD1;
+}
+.modal-title-custom {
+  color:#4ACCD1;
+}
+/*section-3-doctor-info (in modal)*/
+.section-3-doctor-info {
+  text-align:left;
+}
+.section-3-doctor-info {
+  list-style:none;
+  padding:0;
+  margin-bottom:20px;
+}
+.section-3-doctor-info .icon {
+  color:#4ACCD1;
+  vertical-align:middle;
+  padding:0 5px;
+}
+.section-3-doctor-info>li {
+  padding:10px 5px;
+}
+.section-3-doctor-info .list {
+  display:inline-block;
+  vertical-align:middle;
+}
+.section-3-doctor-info .list h4 {
+  font-size:20px;
+  font-weight:500;
+  color:#444;
+}
+.table-custom {
+  margin:30px 0;
+}
+.timetable {
+  font-weight:700;
+  color:#4ACCD1;
+}
+.timetable-icon {
+   text-align:center;
+}
+/*-section-3-facilities-*/
+.section-4-facilities {
+  text-align:center;
+  margin:40px 0;
+}
+.section-4-facilities-title {
+  font-weight:600;
+}
+.section-4-facilities-description {
+  margin-bottom:40px;
+}
+/*override default bootstrap background-color of carousel-indicators to make it more visible among picture*/
+
+.carousel-indicators-custom li,
+.carousel-indicators-custom .active{
+  background-color:rgba(0,0,0,0.7);
+}
+/*-add styles to center carousel item(original img width smaller than modal-lg size >992px)*/
+.facilities-img {
+  margin:0 auto;
+}
+/*-section-5-testimonial*/
+.section-5-testimonial {
+  background-image:url("https://raw.githubusercontent.com/mseong123/assets/master/Bg/1.jpg");
+  background-size:100%;
+  position:relative;
+  background-attachment: fixed;
+}
+.bg-shade {
+  position:absolute;
+  top:0;
+  left:0;
+  right:0;
+  bottom:0;
+  opacity:0.7;
+  background-color:black;
+  z-index:1;
+}
+
+.section-5-testimonial .container {
+  position:relative;
+  z-index:2;
+  padding:40px 0;
+  color:white;
+  text-align:center;
+}
+
+.img-rounded-custom {
+  border-radius:50%;
+  margin:0 auto;
+  cursor:pointer;
+}
+.popover-custom {
+  color:#666;
+}
+.popover-custom .popover-title {
+  font-weight:700;
+}
+
+@media (max-width:768px) {
+  .col-spacing {
+  margin:50px 0;
+  }
+  .section-5-testimonial .container {
+    padding:20px;
+  }
+}
+
+/*-section-6-pricing-*/
+.section-6-pricing {
+  text-align:center;
+  margin:40px 0;
+}
+.section-6-pricing-title {
+  font-weight:600;
+}
+.section-6-pricing-description {
+  margin-bottom:40px;
+}
+.section-6-pricing .col-sm-4 {
+  padding:0;
+}
+.panel-custom-basic,
+.panel-custom-golden {
+  position:relative;
+  transition:all linear 0.3s;
+}
+.panel-custom-golden {
+  box-shadow:0 4px 20px 0 rgba(0,0,0,0.5);
+}
+
+.panel-custom-basic .panel-heading-1,
+.panel-custom-golden .panel-heading-1 {
+  color:white;
+}
+.panel-custom-basic .panel-heading-1{
+  background-color:#666;
+  padding:20px 0;
+}
+.panel-custom-golden .panel-heading-1 {
+  background-color:#3fbbc0;
+  padding:20px 0;
+}
+
+.panel-custom-basic .panel-heading-2,
+.panel-custom-golden .panel-heading-2{
+  color:white;
+  border-radius:0;
+}
+
+.panel-custom-basic .panel-heading-2 {
+  background-color:#444;
+  padding:20px 0;
+}
+.panel-custom-golden .panel-heading-2 {
+  background-color:#4ACCD1;
+  padding:35px 0;
+}
+
+.panel-custom-basic .panel-heading-2 em {
+  font-size:24px;
+  font-weight:700;
+}
+
+.panel-custom-golden .panel-heading-2 em {
+  font-size:28px;
+  font-weight:700;
+}
+
+.panel-custom-basic ul,
+.panel-custom-golden ul {
+  list-style:none;
+}
+.panel-custom-basic ul li,
+.panel-custom-golden ul li {
+  padding:15px 0;
+}
+.panel-custom-basic ul .fa-check,
+.panel-custom-golden ul .fa-check{
+  color:#7db53b;
+  vertical-align:middle;
+  padding:0 10px;
+}
+.panel-custom-basic ul .fa-times,
+.panel-custom-golden ul .fa-times{
+  color:red;
+  vertical-align:middle;
+  padding:0 10px;
+}
+.panel-custom-golden .panel-footer-custom {
+  background-color:#3fbbc0;
+} 
+@media (min-width:768px) {
+  .panel-custom-basic {
+  top:35px;
+  }
+  .panel-custom-basic:hover,
+  .panel-custom-basic:focus {
+  top:5px;
+  }
+}
+/*-section-7-moreinfo-*/
+.section-7-moreinfo {
+  background-color:#f2f2f2;
+  padding:40px 0;
+}
+.section-7-moreinfo ul {
+  list-style:none;
+  padding:0;
+}
+.section-7-moreinfo ul a:hover{
+  text-decoration:none;
+  color:#4ACCD1;
+}
+.social-icon-list li  {
+  display:inline-block;
+}
+.social-icon {
+  width:40px;
+  height:40px;
+  border-radius:3px;
+  line-height:40px;
+  color:white;
+  text-align:center;
+}
+.social-icon-fb {
+  background-color:#3873ae;
+}
+.social-icon-twitter {
+  background-color:#62c6f8;
+}
+.social-icon-googleplus {
+  background-color:#000;
+}
+.social-icon-vimeosquare {
+  background-color:#51a6d3;
+}
+.social-icon-dribbble {
+  background-color:#d74980;
+}
+
+/*section-8-footer*/
+.section-8-footer {
+  text-align:center;
+  margin:10px 0;
+}
+.section-8-footer-right em {
+  font-weight:700;
+}
+@media (min-width:768px) {
+  .section-8-footer-left {
+    text-align:left;
+  }
+  .section-8-footer-right {
+    text-align:right;
+  }
+}
